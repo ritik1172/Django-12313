@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'shop',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'myproject.urls'
-import os 
+import os
 
 TEMPLATES = [
     {
