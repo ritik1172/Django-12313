@@ -1,3 +1,3 @@
-function handleClick(){
-    alert("Button Clicked")
+const handleClick = () => {
+    alert("Button is clicked...")
 }
