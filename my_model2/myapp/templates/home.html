@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    {% if students %}
+    <h1>Data Available..</h1>
+    <hr/>
+    <table border="2" cellpadding="10" cellspacing="5">
+       <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+       </tr>
+       {% for s in students %}
+       <tr  style= "background-color:{% cycle 'lightblue' 'lightgreen'  %}">
+        <td>{{ s.name }}</td>
+        <td>{{ s.age }}</td>
+        <td>{{ s.email }}</td>
+       </tr>
+       {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
