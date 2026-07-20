@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" cellpadding="10" cellspacing="8">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        {% for s in students %}
+        <tr style="background-color: {% cycle 'lightgreen' 'lightblue' %}">
+            <td>{{s.name}}</td>
+            <td>{{s.email}}</td>
+            <td>{{s.age}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

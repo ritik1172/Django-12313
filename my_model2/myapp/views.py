@@ -18,3 +18,7 @@ def submit_form(request):
         else:
             return HttpResponse("All fields should be filled...")
     return redirect('contact_form');
+
+def details(request):
+    students = Student.objects.all();
+    return render(request, "details.html", {"students": students});
