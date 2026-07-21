@@ -11,14 +11,23 @@
             <th>Name</th>
             <th>Email</th>
             <th>Age</th>
+            <th>Action</th>
         </tr>
         {% for s in students %}
         <tr style="background-color: {% cycle 'lightgreen' 'lightblue' %}">
             <td>{{s.name}}</td>
             <td>{{s.email}}</td>
             <td>{{s.age}}</td>
+            <td>
+                <a href="{% url 'delete_student' s.id %}">Delete</a>
+                |
+                <a href="{% url 'update_student' s.id %}">Update</a>
+            </td>
+        
         </tr>
         {% endfor %}
     </table>
+
+    
 </body>
 </html>
