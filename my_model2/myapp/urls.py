@@ -7,7 +7,7 @@ urlpatterns = [
     path('details/', views.details, name="details"),
     path('delete/<int:id>/', views.delete_student, name="delete_student"),
     path('update/<int:id>/', views.update_student, name="update_student"),
-    
-]
+    path('login/', views.login_page, name='login'),
+    path('logout/', views.logout_page, name='logout'),]
 
 # https://github.com/ritik1172/Django-12313/tree/main/my_model2

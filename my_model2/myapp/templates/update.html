@@ -8,14 +8,11 @@
 <body>
     <form method="POST">
         {% csrf_token %}
-        <input type="text" name="name" value={{ student.name }}>
+        <input type="text" name="name" value={{student.name}}>
         <br/> <br/>
-        <input type="email" name="email" value= {{ student.email }}>
+        <input type="email" name="email" value={{student.email}}>
         <br/> <br/>
-        <input type="number" name="age" value= {{ student.age }}>
-        <br/> <br/>
-
-        <button type="submit">Update</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
